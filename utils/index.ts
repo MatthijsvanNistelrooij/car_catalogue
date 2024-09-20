@@ -65,7 +65,6 @@ export async function fetchCars(filters: FilterProps) {
 }
 
 export const generateCarImageUrl = (car: CarProps, angle?: string) => {
-  console.log("generateCarImageUrl")
 
   const url = new URL("https://cdn.imagin.studio/getimage")
   const { make, model, year } = car
